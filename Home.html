@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teidge Group Ltd | Fluxify Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glow-text { text-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+        .gradient-border { border: 1px solid transparent; background: linear-gradient(#050505, #050505) padding-box, linear-gradient(to right, #3b82f6, #8b5cf6) border-box; }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; border-radius: 50px; padding: 12px 24px; z-index: 100; box-shadow: 0 0 20px rgba(37, 211, 102, 0.4); display: flex; align-items: center; gap: 10px; font-weight: bold; }
+    </style>
+</head>
+<body>
 
+    <a href="https://wa.me/250786111626" class="whatsapp-float hover:scale-105 transition" target="_blank">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span>Chat Now</span>
+    </a>
+
+    <nav class="glass sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-blue-500 glow-text">TEIDGE GROUP</div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400 uppercase tracking-widest">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#services" class="hover:text-white transition">Expertise</a>
+                <a href="#contact" class="text-white border-b border-blue-500 pb-1">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 px-6 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-600/10 blur-[120px] rounded-full"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block px-4 py-1 rounded-full border border-blue-500/30 text-blue-400 text-xs font-bold mb-6 uppercase tracking-widest bg-blue-500/5">Based in Musanze, Rwanda</span>
+            <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-none tracking-tight">The Future of <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Business Solutions.</span></h1>
+            <p class="text-gray-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">Teidge Group Ltd provides elite consulting, logistics, and investment strategies driven by precision and excellence.</p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://youtube.com/@Teidge_Official" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-gray-200 transition">Teidge_Official YouTube</a>
+                <a href="https://www.linkedin.com/in/Teidge-Ruhago" class="glass px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">LinkedIn Network</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+        <div class="glass p-10 rounded-3xl group hover:border-blue-500/50 transition">
+            <div class="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6 text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition">
+                <i class="fas fa-rocket text-xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Consulting</h3>
+            <p class="text-gray-500 leading-relaxed">Navigating the complex Rwandan market with data-driven strategic planning.</p>
+        </div>
+        <div class="glass p-10 rounded-3xl group hover:border-blue-500/50 transition">
+            <div class="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6 text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition">
+                <i class="fas fa-globe text-xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Logistics</h3>
+            <p class="text-gray-500 leading-relaxed">Efficient, secure supply chain management based out of Musanze.</p>
+        </div>
+        <div class="glass p-10 rounded-3xl group hover:border-blue-500/50 transition">
+            <div class="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6 text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition">
+                <i class="fas fa-chart-pie text-xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Investments</h3>
+            <p class="text-gray-500 leading-relaxed">Identifying and securing high-growth opportunities for sustainable wealth.</p>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-32 px-6 border-t border-white/5 bg-[#080808]">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-4xl font-bold mb-8 uppercase italic glow-text">HQ: Musanze - Rwanda</h2>
+                <div class="space-y-6 text-gray-400">
+                    <p class="flex items-center gap-4"><i class="fas fa-phone-alt text-blue-500"></i> +250 786 111 626</p>
+                    <p class="flex items-center gap-4"><i class="fas fa-envelope text-blue-500"></i> teidgeruhago@gmail.com</p>
+                    <p class="flex items-center gap-4"><i class="fas fa-link text-blue-500"></i> teidgegroup.netlify.app</p>
+                </div>
+                <div class="mt-12">
+                    <a href="https://maps.google.com/?q=Musanze,Rwanda" target="_blank" class="gradient-border px-8 py-4 rounded-xl font-bold inline-block hover:scale-105 transition">
+                        Find Office on Map
+                    </a>
+                </div>
+            </div>
+            
+            <div class="glass p-10 rounded-3xl">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="text" name="name" placeholder="Name" required class="w-full mb-4 bg-white/5 border border-white/10 p-4 rounded-xl outline-none focus:border-blue-500">
+                    <textarea name="message" placeholder="Project Details" rows="4" required class="w-full mb-6 bg-white/5 border border-white/10 p-4 rounded-xl outline-none focus:border-blue-500"></textarea>
+                    <button type="submit" class="w-full bg-blue-600 py-4 rounded-xl font-bold hover:bg-blue-500 transition shadow-2xl shadow-blue-500/20">Initialize Contact</button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-20 text-center text-xs text-gray-600 tracking-widest uppercase">
+            © 2025 TEIDGE GROUP LTD — Engineered for Success
+        </div>
+    </footer>
+
+</body>
+              </html>
